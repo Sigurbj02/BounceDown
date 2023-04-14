@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import hi.vidmot.*?>
+<?import javafx.scene.layout.Pane?>
+<fx:root fx:id="fxLeikbord" prefHeight="514.0" prefWidth="600.0" styleClass="leikbord" type="javafx.scene.layout.Pane"
+         xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Bolti fx:id="bolti" fitHeight="65.0" fitWidth="65.0" layoutX="124.0" layoutY="60.0"/>
+        <Pallur height="20" layoutX="14.0" layoutY="301.0" width="100"/>
+        <Pallur height="20" layoutX="482.0" layoutY="273.0" width="100"/>
+        <Pallur height="20" layoutX="291.0" layoutY="348.0" width="100"/>
+        <Pallur height="20" layoutX="180.0" layoutY="448.0" width="100"/>
+        <Pallur height="20" layoutX="363.0" layoutY="531.0" width="100"/>
+    </children>
+</fx:root>

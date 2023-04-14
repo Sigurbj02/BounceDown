@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="hi.vidmot.ValmyndController">
+    <children>
+        <VBox layoutX="250.0" layoutY="171.0" prefHeight="200.0" prefWidth="100.0">
+            <children>
+                <Button mnemonicParsing="false" onAction="#hefjaLeik" text="Nýr leikur"/>
+                <Button mnemonicParsing="false" onAction="#opnaUpplysingarUmLeik" text="Um leikinn"/>
+                <Button mnemonicParsing="false" onAction="#opnaStigatoflu" text="Opna stigatöflu"/>
+                <Button mnemonicParsing="false" onAction="#veljaThema" text="Þema"/>
+            </children>
+        </VBox>
+        <HBox layoutX="199.0" layoutY="91.0" prefHeight="59.0" prefWidth="200.0">
+            <children>
+                <Label text="Nafn: "/>
+                <TextField fx:id="fxNafnReitur"/>
+            </children>
+        </HBox>
+        <Label layoutX="144.0" layoutY="21.0" prefHeight="70.0" prefWidth="310.0" text="BounceDown">
+            <font>
+                <Font size="48.0"/>
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

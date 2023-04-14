@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="BoltiHlutur">
+    <output-path>$PROJECT_DIR$/out/artifacts/BoltiHlutur</output-path>
+    <root id="archive" name="BoltiHlutur.jar">
+      <element id="module-output" name="Bouncedown" />
+    </root>
+  </artifact>
+</component>

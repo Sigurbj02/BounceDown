@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import hi.vidmot.Leikbord?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@bouncingball.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hi.vidmot.BouncingController">
+    <center>
+        <Leikbord fx:id="fxLeikbord" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+    </center>
+    <top>
+        <AnchorPane id="efriRammi" prefHeight="54.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+            <children>
+                <MenuBar layoutY="1.0">
+                    <menus>
+                        <Menu mnemonicParsing="false" text="Leikur">
+                            <items>
+                                <MenuItem mnemonicParsing="false" onAction="#leikmadurHandler" text="Leikmaður" />
+                                <MenuItem mnemonicParsing="false" onAction="#nyrLeikurHandler" text="Nýr leikur" />
+                                <MenuItem mnemonicParsing="false" onAction="#lokaHandler" text="Hætta/loka" />
+                            </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Þema">
+                            <items>
+                                <MenuItem id="bleikt" mnemonicParsing="false" onAction="#veljaThemaHandler" text="Bleikt" />
+                                <MenuItem id="blatt" mnemonicParsing="false" onAction="#veljaThemaHandler" text="Blátt" />
+                            </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Upplýsingar">
+                            <items>
+                                <MenuItem mnemonicParsing="false" onAction="#umLeikinnHandler" text="Um leikinn" />
+                                <MenuItem mnemonicParsing="false" onAction="#uppfylltarKrofurHandler" text="Uppfylltar kröfur" />
+                                <MenuItem mnemonicParsing="false" onAction="#oskUmEinkunHandler" text="Ósk um einkun fyrir verkefni" />
+                                <MenuItem mnemonicParsing="false" onAction="#leikreglurHandler" text="Leikreglur" />
+                            </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Stigatafla">
+                            <items>
+                                <MenuItem mnemonicParsing="false" onAction="#opnaTopplistaHandler" text="Topplisti" />
+                                <MenuItem mnemonicParsing="false" onAction="#opnaSidustuLeikiListaHandler" text="Síðustu leikir" />
+                            </items>
+                        </Menu>
+                    </menus>
+                </MenuBar>
+                <Label fx:id="fxNafn" layoutX="335.0" layoutY="16.0" prefHeight="18.0" prefWidth="181.0" text="Label">
+                    <font>
+                        <Font name="OCR A Extended" size="12.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+    </top>
+    <bottom>
+        <AnchorPane id="nedriRammi" prefHeight="45.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+            <children>
+                <Label fx:id="fxStig" layoutX="51.0" layoutY="13.0" prefHeight="18.0" prefWidth="109.0" text="Label">
+                </Label>
+                <Label fx:id="fxHradi" layoutX="388.0" layoutY="13.0" prefHeight="18.0" prefWidth="109.0" text="Label">
+                </Label>
+            </children>
+        </AnchorPane>
+    </bottom>
+</BorderPane>

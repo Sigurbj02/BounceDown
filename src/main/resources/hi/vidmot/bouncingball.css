@@ -1,0 +1,48 @@
+.leikbord-bleikt{
+-fx-background-image: url("myndir/bakgrunnur1.jpg");
+-fx-background-size: 800;
+-fx-border-color: brown;
+}
+
+.leikbord-blatt{
+-fx-background-image: url("myndir/bakgrunnur2.jpg");
+-fx-background-size: 800;
+-fx-border-color: #7175bf;
+}
+
+.labels-bleikt {
+    -fx-background-color: oldlace;
+    -fx-font-family: "OCR A Extended";
+    -fx-font-size: 12;
+}
+
+.labels-blatt {
+    -fx-background-color: #e1f7f2;
+    -fx-font-family: "OCR A Extended";
+    -fx-font-size: 12;
+}
+
+.pallar-bleikt{
+-fx-fill: #e27ab8;
+-fx-stroke: #bc2981;
+
+}
+
+.pallar-blatt{
+-fx-fill: cyan;
+}
+
+
+.umgjord-bleikt{
+-fx-background-color: pink;
+}
+
+.umgjord-blatt{
+-fx-background-color: #75dfff;
+}
+
+.dialog{
+-fx-border-color: black;
+-fx-border-width: 2px;
+}
+
